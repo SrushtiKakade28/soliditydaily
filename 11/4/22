@@ -1,0 +1,24 @@
+ Function Declarations-
+ pragma solidity >=0.5.0 <0.6.0;
+
+contract ZombieFactory {
+
+    uint dnaDigits = 16;
+    uint dnaModulus = 10 ** dnaDigits;
+
+    struct Zombie {
+        string name;
+        uint dna;
+    }
+
+    Zombie[] public zombies;
+
+    // start here
+    function createZombie(string memory _name, uint _dna) public{
+        /* arguments can be passed by value(. This allows your function to modify the value without worrying that the value of the initial parameter gets changed.) 
+        and by reference( Thus, if your function changes the value of the variable it receives, the value of the original variable gets changed.) */
+    /*  It's convention (but not required) to start function parameter variable names with an underscore (_)  */
+    /*memory keyword is used here because If you declare variables in functions without the memory keyword, then solidity will try to use the storage structure, which currently compiles, but can produce unexpected results. memory tells solidity to create a chunk of space for the variable at method runtime, guaranteeing its size and structure for future use in that method */
+    }
+}
+
