@@ -21,4 +21,11 @@ contract ZombieFactory {
     /*memory keyword is used here because If you declare variables in functions without the memory keyword, then solidity will try to use the storage structure, which currently compiles, but can produce unexpected results. memory tells solidity to create a chunk of space for the variable at method runtime, guaranteeing its size and structure for future use in that method */
     }
 }
+----------------------------
+1)Declaring arrays-
+type arrayName [ arraySize ];
+eg- uint uniqueid[7];
 
+2)Creating dynamic memory arrays-(Dynamic memory arrays are created using new keyword.)
+uint size = 3;
+uint balance[] = new uint[](size);
